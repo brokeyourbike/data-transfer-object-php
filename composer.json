@@ -1,6 +1,6 @@
 {
     "name": "brokeyourbike/data-transfer-object",
-    "description": "First City Monument Bank API Client for PHP",
+    "description": "Return original response alongside with the DataTransferObject",
     "type": "library",
     "license": "MPL-2.0",
     "keywords": [
