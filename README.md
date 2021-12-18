@@ -28,7 +28,7 @@ class SomeDTO extends JsonResponse
 
 assert($response instanceof ResponseInterface);
 
-$dto = new SomeResponse($response);
+$dto = new SomeDTO($response);
 
 assert($response === $dto->getRawResponse());
 ```
