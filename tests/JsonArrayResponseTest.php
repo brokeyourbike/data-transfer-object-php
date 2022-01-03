@@ -14,16 +14,16 @@ use PHPUnit\Framework\TestCase;
 /**
  * @author Ivan Stasiuk <ivan@stasi.uk>
  */
-class JsonResponseTest extends TestCase
+class JsonArrayResponseTest extends TestCase
 {
     /** @test */
     public function it_can_return_response()
     {
         $mockedResponse = $this->getMockBuilder(ResponseInterface::class)->getMock();
-        $mockedResponse->method('getBody')->willReturn('{"name": "John Doe"}');
+        $mockedResponse->method('getBody')->willReturn('[{"color": "red"}]');
 
         /** @var ResponseInterface $mockedResponse */
-        $dto = new DtoFixture($mockedResponse);
+        $dto = new ArrayDtoFixture($mockedResponse);
 
         $this->assertSame($mockedResponse, $dto->getRawResponse());
     }
@@ -32,12 +32,18 @@ class JsonResponseTest extends TestCase
     public function it_can_decode()
     {
         $mockedResponse = $this->getMockBuilder(ResponseInterface::class)->getMock();
-        $mockedResponse->method('getBody')->willReturn('{"name": "John Doe"}');
+        $mockedResponse->method('getBody')->willReturn('[{"color": "red"}, {"color": "green"}]');
 
         /** @var ResponseInterface $mockedResponse */
-        $dto = new DtoFixture($mockedResponse);
+        $dto = new ArrayDtoFixture($mockedResponse);
 
-        $this->assertInstanceOf(DtoFixture::class, $dto);
-        $this->assertSame('John Doe', $dto->name);
+        $this->assertInstanceOf(ArrayDtoFixture::class, $dto);
+        $this->assertCount(2, $dto->apples);
+
+        [$apple1, $apple2] = $dto->apples;
+        $this->assertInstanceOf(AppleFixture::class, $apple1);
+        $this->assertSame('red', $apple1->color);
+        $this->assertInstanceOf(AppleFixture::class, $apple2);
+        $this->assertSame('green', $apple2->color);
     }
 }

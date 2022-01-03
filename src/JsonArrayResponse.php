@@ -14,14 +14,14 @@ use Psr\Http\Message\ResponseInterface;
 /**
  * @author Ivan Stasiuk <ivan@stasi.uk>
  */
-abstract class JsonResponse extends DataTransferObject
+abstract class JsonArrayResponse extends DataTransferObject
 {
     private ResponseInterface $_response;
 
-    public function __construct(ResponseInterface $response)
+    public function __construct(ResponseInterface $response, string $propertyName)
     {
         $this->_response = $response;
-        parent::__construct(\json_decode($response->getBody(), true));
+        parent::__construct([$propertyName => \json_decode($response->getBody(), true)]);
     }
 
     public function getRawResponse(): ResponseInterface

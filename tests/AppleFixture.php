@@ -8,14 +8,12 @@
 
 namespace BrokeYourBike\DataTransferObject\Tests;
 
+use Spatie\DataTransferObject\DataTransferObject;
+
 /**
  * @author Ivan Stasiuk <ivan@stasi.uk>
  */
-abstract class TestCase extends \PHPUnit\Framework\TestCase
+class AppleFixture extends DataTransferObject
 {
-    protected function tearDown(): void
-    {
-        parent::tearDown();
-        \Mockery::close();
-    }
+    public string $color;
 }

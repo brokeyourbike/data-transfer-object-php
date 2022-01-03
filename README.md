@@ -1,4 +1,4 @@
-# data-transfer-object-php
+# data-transfer-object
 
 [![Latest Stable Version](https://img.shields.io/github/v/release/brokeyourbike/data-transfer-object-php)](https://github.com/brokeyourbike/data-transfer-object-php/releases)
 [![Total Downloads](https://poser.pugx.org/brokeyourbike/data-transfer-object/downloads)](https://packagist.org/packages/brokeyourbike/data-transfer-object)

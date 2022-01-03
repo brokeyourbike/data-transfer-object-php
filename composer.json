@@ -5,7 +5,8 @@
     "license": "MPL-2.0",
     "keywords": [
         "api",
-        "data-transfer-object"
+        "data-transfer-object",
+        "brokeyourbike"
     ],
     "autoload": {
         "psr-4": {
@@ -20,8 +21,8 @@
     "authors": [
         {
             "name": "Ivan Stasiuk",
-            "email": "brokeyourbike@gmail.com",
-            "homepage": "https://github.com/brokeyourbike"
+            "email": "ivan@stasi.uk",
+            "homepage": "https://stasi.uk"
         }
     ],
     "minimum-stability": "stable",
