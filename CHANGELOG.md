@@ -1,5 +1,13 @@
 # Changelog
 
+### [0.2.1](https://www.github.com/brokeyourbike/data-transfer-object-php/compare/v0.2.0...v0.2.1) (2023-05-14)
+
+
+### Miscellaneous Chores
+
+* allow bin ([c9ebad7](https://www.github.com/brokeyourbike/data-transfer-object-php/commit/c9ebad7291b89e849dee4a9706c67a6fa80a66de))
+* badges ([adbaad9](https://www.github.com/brokeyourbike/data-transfer-object-php/commit/adbaad901c787f1a671fc3fd4115cc0286b2d088))
+
 ## [0.2.0](https://www.github.com/brokeyourbike/data-transfer-object-php/compare/v0.1.1...v0.2.0) (2022-01-03)
 
 
