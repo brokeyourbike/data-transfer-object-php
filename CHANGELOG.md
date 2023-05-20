@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.2.2](https://www.github.com/brokeyourbike/data-transfer-object-php/compare/v0.2.1...v0.2.2) (2023-05-20)
+
+
+### Miscellaneous Chores
+
+* button ([49e12eb](https://www.github.com/brokeyourbike/data-transfer-object-php/commit/49e12ebb944635b0387ddea8b728548f5dd93eee))
+
 ### [0.2.1](https://www.github.com/brokeyourbike/data-transfer-object-php/compare/v0.2.0...v0.2.1) (2023-05-14)
 
 
